@@ -157,7 +157,7 @@ export default {
       }
       .seventeen_auto_p {
         background: linear-gradient(to right, #fed701, #fe121a);
-        -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         margin-top: 1.54rem;
         font-size: .5rem;
