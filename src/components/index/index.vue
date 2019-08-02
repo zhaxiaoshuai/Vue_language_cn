@@ -24,7 +24,7 @@
 
       <div class="noOne clearfix">
         <el-row type="flex" justify="center" class="noOne-top clearfix">
-          <el-col :span="10" :xs="24" :lg="12" :md="18" :sm="22" :xl="9">
+          <el-col :span="10" :xs="24" :lg="13" :md="18" :sm="22" :xl="9">
             <img src="./images/NO.1.png" alt="No.1" />
             <p>一 个 快 速 简 单 的</p>
             <h1>切手机保护膜设备</h1>

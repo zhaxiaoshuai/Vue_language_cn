@@ -2,12 +2,12 @@
   <el-container>
     <!-- 最顶部小导航 -->
     <el-header class="header-el-up" style="height:.4rem">
-      <el-row class="header-left">
+      <el-row class="header-left container">
         <el-col :span="6" class="hidden-xs-only">
           <img src="./images/logo_left_small.png" alt="IDskin_LOGO" />
           <span>手机膜切膜机</span>
         </el-col>
-        <el-col :xs="24" :span="12" class="header-auto">
+        <el-col :xs="24" :span="14" class="header-auto">
           <span>
             <strong>
               更快捷、更先进的切膜机，不用触摸屏，不用电脑，
@@ -15,9 +15,8 @@
             </strong>
           </span>
         </el-col>
-        <el-col :span="6" class="header-right hidden-xs-only">
-          <img src="./images/right_phone_small.png" alt style="margin-top:5px;" />
-          <span>400热线 : 4000-158-168</span>
+        <el-col :span="4" class="header-right hidden-xs-only">
+          <a href="http://www.id-skin.com" target="_blank" style="color:#000">English</a>
         </el-col>
       </el-row>
     </el-header>
@@ -33,8 +32,10 @@
           <el-col :span="6" style="margin-top:.17rem;text-align: left">
             <img src="./images/logo_down_only.png" alt="IDskin_logo" class="logo" @click="goTo('index')" />
           </el-col>
+
           <el-col :span="17 ">
-            <ul class="header_url_right clearfix" v-if="show">
+
+            <ul class="header_url_right clearfix" v-show="show">
               <router-link
                 v-for="(item, index) in downHeader"
                 :key="index"
@@ -55,15 +56,19 @@
                 </ul>-->
               </router-link>
             </ul>
+          <a href="http://www.id-skin.com" target="_blank" style="color:#000;display:inline-block;margin-top:.27rem">English</a>
+
             <img
               src="./images/menu.png"
               alt="导航"
-              v-else
+              v-show="!show"
               class="menu"
               style="float:right"
               @click="isPhoneShow2"
             />
+
           </el-col>
+
         </div>
         <keep-alive>
           <el-col :span="24" v-if="isPhoneShow" class="ab">
@@ -167,7 +172,7 @@ export default {
   padding: 0;
 }
 .header-el-up {
-  font-size: 0.24rem;
+  font-size: 0.2rem;
   text-align: center;
   line-height: 0.4rem;
   background: #f2f2f2;
@@ -182,7 +187,6 @@ export default {
       color: rgb(182, 0, 5);
     }
     .header-right {
-      font-size: 0.24rem;
       font-weight: bold;
     }
   }

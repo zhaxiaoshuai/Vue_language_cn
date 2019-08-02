@@ -11,7 +11,7 @@
       <backtop></backtop>
     </div>
     <!-- footer -->
-    <IDFooter />
+    <!-- <IDFooter /> -->
   </div>
 </template>
 

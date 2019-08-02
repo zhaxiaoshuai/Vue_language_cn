@@ -9,8 +9,9 @@
     </el-row>
     <div class="container container-all">
       <!-- 循环 -->
+      <!-- :class="{'container-left':categorys.type,'container-right':!categorys.type}" -->
       <el-row> 
-        <el-col :span="11" :xs="24" :sm="24" :md="11" v-for="(categorys, index) in message" :key="index" :class="{'container-left':categorys.type,'container-right':!categorys.type}">
+        <el-col :span="11" :xs="24" :sm="24" :md="11" v-for="(categorys, index) in message" :key="index" :class="categorys.type ? 'container-left': 'container-right'  " >
           <ul>
             <li>
               <h1> {{categorys.h1Message}} </h1>
