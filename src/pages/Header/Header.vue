@@ -56,7 +56,7 @@
                 </ul>-->
               </router-link>
             </ul>
-          <a href="http://www.id-skin.com" target="_blank" style="color:#000;display:inline-block;margin-top:.26rem">English</a>
+          <a href="http://www.id-skin.com" target="_blank" style="color:#000;display:inline-block;margin-top:.27rem">English</a>
 
             <img
               src="./images/menu.png"
