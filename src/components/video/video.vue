@@ -1,10 +1,10 @@
 <template>
   <div id="video">
     <bannerStaticState>
-      <img src="../../../static/images/video_banner_1.jpg" alt="教学视频">
+      <img src="../../../static/images/video_banner_1.jpg" alt="教学视频" />
     </bannerStaticState>
-    <div class="video  clearfix">
-      <div class="video_auto container  clearfix">
+    <div class="video clearfix">
+      <div class="video_auto container clearfix">
         <ul class="video_auto_ul clearfix">
           <router-link
             v-for="(item, index) in allVideo"
@@ -26,7 +26,7 @@
 </template>
 <script>
 import bannerStaticState from "../../pages/banner/bannerStaticState";
-import { mapState } from "vuex";
+import { mapState , mapActions } from "vuex";
 export default {
   name: "idskinvideo",
   data() {
@@ -48,11 +48,15 @@ export default {
       ]
     };
   },
-  created() {},
-  methods: {},
+  mounted() {
+    this.getVideoList()
+  },
+  methods: {
+    ...mapActions(['getVideoList'])
+  },
   components: {
     bannerStaticState
-  },
+  }
 };
 </script>
 <style lang="scss">
@@ -63,15 +67,15 @@ export default {
   }
   .video {
     background: #f2f2f2;
-    font-size: .2rem;
+    font-size: 0.2rem;
   }
   .video_auto_ul {
     background: #fff;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
     li {
       float: left;
       cursor: pointer;
-      padding: .2rem;
+      padding: 0.2rem;
       box-sizing: border-box;
       &:hover {
         color: #b50005;

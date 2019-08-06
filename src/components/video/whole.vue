@@ -1,7 +1,7 @@
 <template>
   <div>
     <videoStatic>
-      <li v-for="(item, index) in allVideoTest" :key="index">
+      <li v-for="(item, index) in allVideo" :key="index">
         <a :href="item.url" target="_block">
           <img :src="item.img" alt="IDskin封面" />
           {{item.title}}
@@ -13,13 +13,15 @@
 
 <script>
 import videoStatic from "../../pages/videoStatic/videoStatic";
-import { mapState } from "vuex";
+import { mapState , mapActions } from "vuex";
 export default {
   components: {
     videoStatic
   },
+  methods:{
+  },
   computed: {
-    ...mapState(["allVideoTest"])
+    ...mapState(["allVideo"])
   }
 };
 </script>

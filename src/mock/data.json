@@ -1,0 +1,42 @@
+{
+    "allVideo": [
+      {
+        "type": "teaching",
+        "title": "安装视频",
+        "img": "../../static/images/video.png",
+  
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=s08844ky2kq"
+      },
+      {
+        "type": "teaching",
+        "title": "安装软件",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=o08854h5qbz"
+      },
+      {
+        "type": "teaching",
+        "title": "实战操作",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=d0885hf19n2"
+      },
+      {
+        "type": "teaching",
+        "title": "贴膜教程",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=v0885t67fj3"
+      },
+      {
+        "type": "teaching",
+        "title": "材料充值",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=q08856sn425"
+      },
+      {
+        "type": "teaching",
+        "title": "刀头安装视频",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=j088488ta6u"
+      }
+    ]
+  }
+  

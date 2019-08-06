@@ -11,6 +11,7 @@ import 'element-ui/lib/theme-chalk/display.css';
 Vue.use(ElementUI)
 
 import './config/rem'
+import './mock/mockServer'
 
 
 

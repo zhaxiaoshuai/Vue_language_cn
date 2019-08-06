@@ -3,7 +3,7 @@
     <videoStatic>
       <el-row>
         <el-col>
-          <li v-for="(item, index) in zhaoshangVideoArr" :key="index">
+          <li v-for="(item, index) in teaching_video" :key="index">
             <a :href="item.url" target="_block">
               <img :src="item.img" alt="IDskin封面" />
               {{item.title}}
@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import { mapState } from "vuex";
+import { mapState ,mapGetters } from "vuex";
 import videoStatic from "../../pages/videoStatic/videoStatic";
 export default {
   data() {
@@ -31,19 +31,19 @@ export default {
   //   return allVideo;
   // },
   computed: {
-    ...mapState(["allVideoTest"]),
+    ...mapGetters(["teaching_video"]),
 
-    zhaoshangVideoArr() {
-      const { allVideoTest } = this;
-      const arr = [];
-      allVideoTest.forEach(item => {
-        if (item.type === "teaching") {
-          arr.push(item);
-        }
-        // console.log(arr)
-      });
-      return arr;
-    }
+    // zhaoshangVideoArr() {
+    //   const { allVideoTest } = this;
+    //   const arr = [];
+    //   allVideoTest.forEach(item => {
+    //     if (item.type === "teaching") {
+    //       arr.push(item);
+    //     }
+    //     // console.log(arr)
+    //   });
+    //   return arr;
+    // }
   }
 };
 </script>

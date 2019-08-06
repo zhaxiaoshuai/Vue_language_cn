@@ -1,0 +1,1 @@
+export const RECEIVE_VIDEOLIST = 'receive_videolist'
