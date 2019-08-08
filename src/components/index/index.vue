@@ -52,7 +52,7 @@
           <el-col :span="12" :xs="24" :lg="15" :md="18" :sm="24">
             <ul>
               <li v-for="(item, index) in noTwoSixImage.two" :key="index">
-                <img :src="item.url" alt=“手机保护膜展示 />
+                <img :src="item.url" alt="“手机保护膜展示" />
               </li>
             </ul>
           </el-col>
@@ -88,7 +88,7 @@
       <!-- No.3 start -->
       <div class="noThree clearfix">
         <div class="container">
-          <el-row  class="noThree-up">
+          <el-row class="noThree-up">
             <el-col :span="18" :xs="10">
               <img src="./images/NO.3.png" alt="no.3" />
               <p>不漏单不丢客户</p>
@@ -150,7 +150,7 @@
       <!-- No.6 start -->
       <div class="nosix">
         <el-row class="container">
-          <el-col :span="14" class="nosix-left hidden-sm-only hidden-xs-only ">
+          <el-col :span="14" class="nosix-left hidden-sm-only hidden-xs-only">
             <img src="./images/NO.6_1.png" alt="No.6" />
           </el-col>
           <el-col :xs="24" :md="10" :lg="10" :sm="24" :span="10" class="nosix-right">
@@ -192,7 +192,7 @@ export default {
       bannerHeight: null,
       // banner图的位置
       bannerImage: [
-        { imgUrl: require("./images/banner-1.jpg"), alt: "门店引流" }
+        { imgUrl: require("./images/banner-1.jpg"), alt: "门店引流" },
         // { imgUrl: require("./images/banner-2.jpg"), alt: "手机壳套通用规范团体标准审查会" }
       ],
       // No.2 six images

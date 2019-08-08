@@ -49,10 +49,10 @@ export default {
     };
   },
   mounted() {
-    this.getVideoList()
+    // this.getVideoList()
+    this.$store.dispatch('getVideoList')
   },
   methods: {
-    ...mapActions(['getVideoList'])
   },
   components: {
     bannerStaticState

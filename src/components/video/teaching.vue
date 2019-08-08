@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import { mapState ,mapGetters } from "vuex";
+import { mapState, mapGetters } from "vuex";
 import videoStatic from "../../pages/videoStatic/videoStatic";
 export default {
   data() {
@@ -31,7 +31,7 @@ export default {
   //   return allVideo;
   // },
   computed: {
-    ...mapGetters(["teaching_video"]),
+    ...mapGetters(["teaching_video"])
 
     // zhaoshangVideoArr() {
     //   const { allVideoTest } = this;
