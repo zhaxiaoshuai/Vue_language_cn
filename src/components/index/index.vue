@@ -87,7 +87,7 @@
 
       <!-- No.3 start -->
       <div class="noThree clearfix">
-        <div class="container">
+        <div class="container noThree-pos">
           <el-row class="noThree-up">
             <el-col :span="18" :xs="10">
               <img src="./images/NO.3.png" alt="no.3" />
@@ -103,12 +103,13 @@
               </p>
             </el-col>
           </el-row>
+          <img
+            src="./images/NO.3_1.png"
+            alt="App界面展示"
+            class="imgPos hidden-sm-only hidden-xs-only hidden-md-only"
+          />
         </div>
-        <img
-          src="./images/NO.3_1.png"
-          alt="App界面展示"
-          class="imgPos hidden-sm-only hidden-xs-only hidden-md-only"
-        />
+
       </div>
       <!-- No.3 end -->
 
@@ -361,14 +362,18 @@ export default {
   // No.3 start
   .noThree {
     background: url("./images/NO.3_back.png");
+    .noThree-pos{
     position: relative;
-    .imgPos {
-      position: absolute;
-      right: 1.5rem;
-      top: 0.5rem;
-      z-index: 1111;
-      width: 7.4rem;
+      .imgPos {
+        position: absolute;
+        right: 0rem;
+        top: -0.6rem;
+        z-index: 1111;
+        width: 7.4rem;
+      }
+
     }
+
     .noThree-up {
       margin-top: 1rem;
       img {
@@ -400,7 +405,7 @@ export default {
       }
     }
     .nofour-right {
-      color: #fff;
+      color: #ffffff;
       text-align: center;
       padding: 1.5rem 0;
       img {
@@ -439,8 +444,8 @@ export default {
   // No.5 end
   // No.6 start
   .nosix {
-    background: url("./images/NO.6-back.jpg");
-    padding: 1.5rem 0;
+    background: url("./images/NO.6-back.jpg") center no-repeat;
+    padding: 1.25rem 0;
     box-sizing: border-box;
     .nosix-left {
       img {

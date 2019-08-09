@@ -36,7 +36,24 @@
         "title": "刀头安装视频",
         "img": "../../static/images/video.png",
         "url": "https://v.qq.com/txp/iframe/player.html?vid=j088488ta6u"
+      },
+      {
+        "type": "teaching",
+        "title": "刀尖长度调节-普通刀头",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=y0910c66qbr"
+      },
+      {
+        "type": "teaching",
+        "title": "刀尖长度调节-带刻度刀头",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=b0910zt1gdw"
+      },
+      {
+        "type": "teaching",
+        "title": "IDskin系统升级视频",
+        "img": "../../static/images/video.png",
+        "url": "https://v.qq.com/txp/iframe/player.html?vid=k0907v0mf9q"
       }
     ]
   }
-  

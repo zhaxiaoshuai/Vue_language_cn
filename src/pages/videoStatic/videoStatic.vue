@@ -1,22 +1,39 @@
 <template>
-  <ul class="video_anymo container clearfix">
-    <slot></slot>
-    <!-- <li>
-          <img src="http://daqin.cn/public/homea2/images/logo2.png" alt />
-          1111
-        </li>
-        <li>
-          <a href="https://v.qq.com/txp/iframe/player.html?vid=s0894g6ww5k" target="_block">
+  <div class="whole">
+    <ul class="video_anymo container clearfix">
+      <slot></slot>
+      <!-- <li>
             <img src="http://daqin.cn/public/homea2/images/logo2.png" alt />
             1111
-          </a>
-    </li>-->
-  </ul>
+          </li>
+          <li>
+            <a href="https://v.qq.com/txp/iframe/player.html?vid=s0894g6ww5k" target="_block">
+              <img src="http://daqin.cn/public/homea2/images/logo2.png" alt />
+              1111
+            </a>
+      </li>-->
+    </ul>
+  </div>
+
 </template>
 <script>
-export default {};
+  import BScroll from 'better-scroll'
+export default {
+  mounted() {
+    new BScroll(".whole", {
+      scrollY: true,
+      scrollX: true,
+      click: true
+    });
+  },
+};
 </script>
-<style scope="this api replaced by slot-scope in 2.5.0+">
+<style >
+  .whole{
+    margin-top: .2rem;
+    height: 6.8rem;
+    overflow: hidden;
+  }
 .video_anymo {
   margin-top: 0.3rem;
   text-align: center;

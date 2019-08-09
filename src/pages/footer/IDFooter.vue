@@ -5,10 +5,10 @@
         <el-col :span="8" :xs="24">
           <ul>
             <li>
-              <input type="text" name="name" placeholder="姓名" id="name" v-model="name" />
+              <input type="text" name="name" placeholder="姓名" id="name" v-model="name" ref="name" />
             </li>
             <li>
-              <input type="text" name="qq" placeholder="QQ" id="qq" v-model="qq" />
+              <input type="text" name="qq" placeholder="QQ" id="qq" v-model="qq" ref="qq" />
             </li>
             <li>
               <input
@@ -17,10 +17,11 @@
                 placeholder="电话"
                 id="phoneNumber"
                 v-model="phoneNumber"
+                ref="phoneNumber"
               />
             </li>
             <li>
-              <input type="text" name="Email" placeholder="邮箱" id="Email" v-model="Email" />
+              <input type="text" name="Email" placeholder="邮箱" id="Email" v-model="Email" ref="Email" />
             </li>
           </ul>
         </el-col>
@@ -32,6 +33,7 @@
             rows="10"
             placeholder="在这里咨询留言吧"
             v-model="content"
+            ref="content"
           ></textarea>
           <br />
           <button type="button" class="zxf-btn hover-opacity-8" @click="Submit">发送</button>
@@ -49,31 +51,61 @@ export default {
       qq: "",
       phoneNumber: "",
       Email: "",
-      content: ""
+      content: "",
+      index : ""
     };
   },
   methods: {
     Submit() {
       const { name, qq, phoneNumber, Email, content } = this;
+
       if (!name) {
         alert("请输入姓名");
-        return;
+        this.refFocus('name')
       } else if (!qq) {
         alert("请输入qq");
-        return;
+        this.refFocus('qq')
       } else if (!phoneNumber) {
         alert("请输入电话");
-        return;
+        this.refFocus('phoneNumber')
       } else if (!Email) {
         alert("请输入邮箱");
-        return;
+        this.refFocus('Email')
       } else if (!content) {
         alert("请输入留言内容");
-        return;
+        this.refFocus('content')
       } else {
         alert("提交成功");
+        this.name = this.qq = this.phoneNumber = this.Email = this.content = "";
       }
-      this.name = this.qq = this.phoneNumber = this.Email = this.content = "";
+      /*switch ( true ) {
+        case name === "":
+          alert("请输入姓名");
+          this.refFocus('name')
+          break;
+        case qq === "":
+          alert("请输入qq");
+          this.refFocus('qq')
+          break;
+        case phoneNumber === "":
+          alert("请输入电话");
+          this.refFocus('phoneNumber')
+          break;
+        case Email === '':
+          alert("请输入邮箱");
+          this.refFocus('Email')
+          break;
+        case content === "":
+          alert("请输入留言内容");
+          this.refFocus('content')
+          break;
+        default:
+          alert("提交成功");
+          this.name = this.qq = this.phoneNumber = this.Email = this.content = "";
+      }*/
+    },
+    refFocus(index){
+      this.$refs[index].focus();
     }
   }
 };

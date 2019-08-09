@@ -17,7 +17,11 @@
         </el-col>
         <el-col :span="4" class="header-right hidden-xs-only">
           <a href="http://www.id-skin.com" target="_blank" style="color:#000">English</a>
+          <!--<a href="../../../static/app/bt_IDskin%20Cut_Zh.apk" target="_blank" style="color:#000">点击下载</a>-->
+
         </el-col>
+
+
       </el-row>
     </el-header>
     <el-header
