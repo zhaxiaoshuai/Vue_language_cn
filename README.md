@@ -42,9 +42,9 @@ npm run build --report
     --  Header                        公共头部组件
     --  videoStatic                   服务于video部分的公共组件
   router:包含所有路由配置
-    --router                          网站所有路由配置
-  store:包含vuex配置
-    --不做解释
+    --  router                          网站所有路由配置
+  store: 包含vuex配置
+    --  不做解释
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
