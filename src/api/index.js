@@ -3,6 +3,5 @@
 函数的返回值: promise对象
  */
 import ajax from './ajax'
-// const BASE_URL = 'http://localhost:4000'
 
 export const reqVideoList = () => ajax('/video')

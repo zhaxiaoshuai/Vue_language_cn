@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import { mapState, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 import videoStatic from "../../pages/videoStatic/videoStatic";
 export default {
   data() {

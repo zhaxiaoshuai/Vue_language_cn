@@ -14,26 +14,25 @@
       </li>-->
     </ul>
   </div>
-
 </template>
 <script>
-  import BScroll from 'better-scroll'
+import BScroll from "better-scroll";
 export default {
   mounted() {
-    new BScroll(".whole", {
-      scrollY: true,
-      scrollX: true,
-      click: true
+    this.$store.dispatch("getVideoList" , () =>{
+      new BScroll('.whole',{
+
+      })
     });
-  },
+  }
 };
 </script>
 <style >
-  .whole{
-    margin-top: .2rem;
-    height: 6.8rem;
-    overflow: hidden;
-  }
+.whole {
+  margin-top: 0.2rem;
+  height: 6.8rem;
+  overflow: hidden;
+}
 .video_anymo {
   margin-top: 0.3rem;
   text-align: center;

@@ -9,6 +9,7 @@ const features = () => import('../components/features/features.vue')
 const idskinvideo = () => import('../components/video/video.vue')
 const teaching = () => import('../components/video/teaching.vue')
 const whole = () => import('../components/video/whole.vue')
+const projectDisplay = () => import('../components/video/productDisplay.vue')
 // 代理商
 const agent = () => import('../components/Agent_Distributor/Agent_Distributor.vue')
 // 引流案例
@@ -61,6 +62,12 @@ const router = new Router({
           name: 'teaching',
           component: teaching
         },
+        {
+          path: 'productdisplay',
+          name: 'productDisplay',
+          component: projectDisplay
+        },
+
       ]
     },
     {

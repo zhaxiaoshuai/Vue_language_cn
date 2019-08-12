@@ -44,13 +44,18 @@ export default {
           url: {
             name: "teaching"
           }
+        },
+        {
+          title: "材料展示",
+          url: {
+            name: "productDisplay"
+          }
         }
       ]
     };
   },
   mounted() {
     // this.getVideoList()
-    this.$store.dispatch('getVideoList')
   },
   methods: {
   },

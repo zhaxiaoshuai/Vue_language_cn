@@ -6,12 +6,13 @@ import {
 } from '../api'
 export default {
     // 获取全部视频
-    async getVideoList({ commit }) {
+    async getVideoList({ commit } , callback) {
         const result = await reqVideoList()
         if (result.code === 0) {
             const allVideo = result.data
             commit(RECEIVE_VIDEOLIST, { allVideo })
         }
+        callback && callback()
     }
 }
 

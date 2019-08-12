@@ -5,4 +5,9 @@ export default {
             return item.type === 'teaching'
         })
     },
+  productDisplay(state) {
+    return state.allVideo.filter(item => {
+      return item.type === 'productDisplay'
+    })
+  },
 }
