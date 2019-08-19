@@ -5,6 +5,9 @@ import Router from 'vue-router'
 const index = () => import('../components/index/index.vue')
 const advantage = () => import('../components/advantage/advantage.vue')
 const features = () => import('../components/features/features.vue')
+const features_One = () => import('../components/features/One.vue')
+const features_Two = () => import('../components/features/Two.vue')
+
 // 视频模块路由以及子路由--
 const idskinvideo = () => import('../components/video/video.vue')
 const teaching = () => import('../components/video/teaching.vue')
@@ -43,6 +46,21 @@ const router = new Router({
       path: '/features',
       name: 'features',
       component: features,
+      redirect:{
+        name:'Two'
+      },
+      children: [
+        {
+          path:'/one',
+          name:'One',
+          component:features_One,
+        },
+        {
+          path:'/two',
+          name:'Two',
+          component:features_Two,
+        }
+      ]
     },
     {
       path: '/idskinvideo',

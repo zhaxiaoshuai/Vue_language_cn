@@ -18,10 +18,7 @@
         <el-col :span="4" class="header-right hidden-xs-only">
           <a href="http://www.id-skin.com" target="_blank" style="color:#000">English</a>
           <!--<a href="../../../static/app/bt_IDskin%20Cut_Zh.apk" target="_blank" style="color:#000">点击下载</a>-->
-
         </el-col>
-
-
       </el-row>
     </el-header>
     <el-header
@@ -60,8 +57,7 @@
                 </ul>-->
               </router-link>
             </ul>
-          <a href="http://www.id-skin.com" target="_blank" style="color:#000;display:inline-block;margin-top:.27rem">English</a>
-
+          <a href="http://www.id-skin.com" target="_blank" style="color:#000;display:inline-block;margin-top:.27rem" v-show="!show">English</a>
             <img
               src="./images/menu.png"
               alt="导航"
@@ -98,6 +94,7 @@ export default {
     return {
       show: true,
       isPhoneShow: false,
+      isNumber:0,
       downHeader: [
         {
           name: "首页",
