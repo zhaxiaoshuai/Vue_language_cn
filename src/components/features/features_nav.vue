@@ -20,13 +20,13 @@
       return {
         allVideo: [
           {
-            title: "2.0",
+            title: "2.0 无线版",
             url: {
               name: "Two"
             }
           },
           {
-            title: "1.0",
+            title: "1.0 普通版",
             url: {
               name: "One"
             }

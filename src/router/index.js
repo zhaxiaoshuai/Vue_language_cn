@@ -46,20 +46,20 @@ const router = new Router({
       path: '/features',
       name: 'features',
       component: features,
-      redirect:{
-        name:'Two'
+      redirect: {
+        name: 'Two'
       },
       children: [
         {
-          path:'/one',
-          name:'One',
-          component:features_One,
+          path: 'one',
+          name: 'One',
+          component: features_One
         },
         {
-          path:'/two',
-          name:'Two',
-          component:features_Two,
-        }
+          path: 'two',
+          name: 'Two',
+          component: features_Two
+        },
       ]
     },
     {
