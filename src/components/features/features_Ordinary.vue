@@ -64,7 +64,7 @@
 
 <script>
   export default {
-    name: "one",
+    name: "features_wireless",
     data() {
       return {
         // 操作界面简单
