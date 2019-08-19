@@ -22,13 +22,13 @@
           {
             title: "2.0 无线版",
             url: {
-              name: "Two"
+              name: "features_wireless"
             }
           },
           {
             title: "1.0 普通版",
             url: {
-              name: "One"
+              name: "features_ordinary"
             }
           }
         ]

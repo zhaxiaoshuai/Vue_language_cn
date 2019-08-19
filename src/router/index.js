@@ -5,8 +5,8 @@ import Router from 'vue-router'
 const index = () => import('../components/index/index.vue')
 const advantage = () => import('../components/advantage/advantage.vue')
 const features = () => import('../components/features/features.vue')
-const features_One = () => import('../components/features/One.vue')
-const features_Two = () => import('../components/features/Two.vue')
+const features_Wireless = () => import('../components/features/features_Wireless.vue')
+const features_Ordinary = () => import('../components/features/features_Ordinary.vue')
 
 // 视频模块路由以及子路由--
 const idskinvideo = () => import('../components/video/video.vue')
@@ -27,12 +27,6 @@ const router = new Router({
   routes: [
     // 重定向，默认显示index.vue
     {
-      path: "/",
-      redirect: {
-        name: 'index'
-      }
-    },
-    {
       path: '/index',
       name: 'index',
       component: index
@@ -47,18 +41,18 @@ const router = new Router({
       name: 'features',
       component: features,
       redirect: {
-        name: 'Two'
+        name: 'features_wireless'
       },
       children: [
         {
-          path: 'one',
-          name: 'One',
-          component: features_One
+          path: 'ordinary',
+          name: 'features_ordinary',
+          component: features_Ordinary
         },
         {
-          path: 'two',
-          name: 'Two',
-          component: features_Two
+          path: 'wireless',
+          name: 'features_wireless',
+          component: features_Wireless
         },
       ]
     },
@@ -94,20 +88,21 @@ const router = new Router({
       component: agent,
     },
     {
-      path: '/Attractive_clients_flow',
+      path: '/attractive_clients_flow',
       name: 'Attractive_clients_flow',
       component: Attractive_clients_flow,
+    },
+    {
+      path: '/free_admission',
+      name:'free_admission',
+      component: Free_Admission
     },
     // 如果所有路由不匹配跳转到首页 and bob is your uncle
     {
       path: '*',
       redirect: '/index'
     },
-    {
-      path: '/free_admission',
-      name:'free_admission',
-      component: Free_Admission
-    }
+
   ],
 
 })

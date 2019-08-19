@@ -67,7 +67,7 @@
 <script>
   import features_nav from './features_nav'
   export default {
-    name: "Two",
+    name: "features_wireless",
     data() {
       return {
         threeAdvantages: [
