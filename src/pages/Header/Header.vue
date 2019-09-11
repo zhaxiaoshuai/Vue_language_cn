@@ -141,6 +141,12 @@ export default {
           url: {
             name: "Attractive_clients_flow"
           }
+        },
+        {
+          name: "App下载",
+          url: {
+            name: "downloads"
+          }
         }
       ]
     };

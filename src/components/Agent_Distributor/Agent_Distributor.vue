@@ -9,8 +9,6 @@
       </el-col>
     </el-row>
 
-
-
     <div class="oemintroduce">
       <img src="./images/pelple.png" alt="大秦手机壳周年庆" class="width100" />
       <div class="container container-all clearfix">
@@ -25,7 +23,7 @@
                 17
                 <span>年</span>
               </h1>
-              <p>有17年专业基础 大秦有系手机个性增值业务</p>
+              <p>有17年专业基础 大秦有系列手机个性增值业务</p>
             </div>
             <div class="writepeople-bottom">
               <h1>

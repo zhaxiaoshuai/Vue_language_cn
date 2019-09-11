@@ -19,6 +19,9 @@ const agent = () => import('../components/Agent_Distributor/Agent_Distributor.vu
 const Attractive_clients_flow = () => import('../components/Attractive_clients_flow/Attractive_clients_flow.vue')
 
 const Free_Admission = () => import('../components/Attractive_clients_flow/Free_Admission')
+const Downloads = () => import('../components/downloads/downloads')
+
+
 
 Vue.use(Router)
 
@@ -97,6 +100,13 @@ const router = new Router({
       name:'free_admission',
       component: Free_Admission
     },
+    {
+      path: '/downloads',
+      name:'downloads',
+      component: Downloads
+    },
+
+
     // 如果所有路由不匹配跳转到首页 and bob is your uncle
     {
       path: '*',
