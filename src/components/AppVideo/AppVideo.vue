@@ -55,7 +55,9 @@
               <img src="./images/steps4.jpg" alt />
             </li>
           </ul>
+          <h1>材料订购人员：电话/微信：13671313585</h1>
         </el-col>
+      
       </el-row>
     </div>
   </div>
@@ -160,6 +162,7 @@ export default {
     margin-top: 0.5rem;
     h1 {
       font-size: 0.5rem;
+      margin-top: .3rem;
     }
     ul {
       li {
