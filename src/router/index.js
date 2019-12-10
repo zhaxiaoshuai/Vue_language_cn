@@ -36,16 +36,16 @@ const router = new Router({
       path: '/index',
       name: 'index',
       component: index,
-      meta:{
-        isShowHeaderFooter:true
+      meta: {
+        isShowHeaderFooter: true
       }
     },
     {
       path: '/advantage',
       name: 'advantage',
       component: advantage,
-      meta:{
-        isShowHeaderFooter:true
+      meta: {
+        isShowHeaderFooter: true
       }
     },
     {
@@ -60,16 +60,16 @@ const router = new Router({
           path: 'ordinary',
           name: 'features_ordinary',
           component: features_Ordinary,
-          meta:{
-            isShowHeaderFooter:true
+          meta: {
+            isShowHeaderFooter: true
           }
         },
         {
           path: 'wireless',
           name: 'features_wireless',
           component: features_Wireless,
-          meta:{
-            isShowHeaderFooter:true
+          meta: {
+            isShowHeaderFooter: true
           }
         },
       ]
@@ -87,24 +87,24 @@ const router = new Router({
           path: 'whole',
           name: 'whole',
           component: whole,
-          meta:{
-            isShowHeaderFooter:true
+          meta: {
+            isShowHeaderFooter: true
           }
         },
         {
           path: 'teaching',
           name: 'teaching',
           component: teaching,
-          meta:{
-            isShowHeaderFooter:true
+          meta: {
+            isShowHeaderFooter: true
           }
         },
         {
           path: 'productdisplay',
           name: 'productDisplay',
           component: projectDisplay,
-          meta:{
-            isShowHeaderFooter:true
+          meta: {
+            isShowHeaderFooter: true
           }
         },
 
@@ -114,39 +114,39 @@ const router = new Router({
       path: '/agent',
       name: 'agent',
       component: agent,
-      meta:{
-        isShowHeaderFooter:true
+      meta: {
+        isShowHeaderFooter: true
       }
     },
     {
       path: '/attractive_clients_flow',
       name: 'Attractive_clients_flow',
       component: Attractive_clients_flow,
-      meta:{
-        isShowHeaderFooter:true
+      meta: {
+        isShowHeaderFooter: true
       }
     },
     {
       path: '/free_admission',
-      name:'free_admission',
+      name: 'free_admission',
       component: Free_Admission,
-      meta:{
-        isShowHeaderFooter:true
+      meta: {
+        isShowHeaderFooter: true
       }
-      
+
     },
     {
       path: '/downloads',
-      name:'downloads',
+      name: 'downloads',
       component: Downloads,
-      meta:{
-        isShowHeaderFooter:true
+      meta: {
+        isShowHeaderFooter: true
       }
     },
     {
-      path:'/appvideo',
-      name:"AppVideo",
-      component:AppVideo
+      path: '/appvideo',
+      name: "AppVideo",
+      component: AppVideo
     },
 
 

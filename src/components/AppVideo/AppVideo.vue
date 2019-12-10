@@ -18,13 +18,46 @@
         <p>{{Appdownload.spanText}}</p>
         <a :href="Appdownload.aHref">立即下载</a>
       </el-col>
-      <!-- 教学视频展示 -->
     </el-row>
-    <el-row class="container">
-        <el-col>
-            
+    <!-- 教学视频展示以及材料充值步骤 -->
+    <div class="teachingSetps">
+      <el-row class="container teachingVideo">
+        <el-col
+          :span="8"
+          :xs="12"
+          v-for="(video, index) in videos"
+          :key="index"
+          style="margin-top:.3rem;"
+        >
+          <a :href="video.videoHref" target="_blank">
+            <img src="./images/video.png" alt />
+            {{video.videoText}}
+          </a>
         </el-col>
-    </el-row>
+
+        <el-col class="setps">
+          <h1>材料加点方式</h1>
+          <ul class="clearfix">
+            <li>
+              步骤1：进入切膜小子App
+              <img src="./images/steps1.jpg" alt />
+            </li>
+            <li>
+              步骤1：进入个人中心
+              <img src="./images/steps2.jpg" alt />
+            </li>
+            <li>
+              步骤1：点击扫描材料数据
+              <img src="./images/steps3.jpg" alt />
+            </li>
+            <li>
+              步骤1：扫码
+              <img src="./images/steps4.jpg" alt />
+            </li>
+          </ul>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -41,12 +74,27 @@ export default {
           aHref: "../../../static/app/cn/IDskin Cut_Zh_11-28-V6(1).apk"
         }
       ],
-      videos:[
-        {videoText:"开箱视频及设备介绍",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=z3030gamug9"},
-        {videoText:"软件安装及调试",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=e3030t4zysn"},
-        {videoText:"刀头调试",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=a30301opyil"},
-        {videoText:"材料展示",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=d3030dxr5y5"},
-        {videoText:"测试切割",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=y30306ie0he"},
+      videos: [
+        {
+          videoText: "开箱视频及设备介绍",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=z3030gamug9"
+        },
+        {
+          videoText: "软件安装及调试",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=e3030t4zysn"
+        },
+        {
+          videoText: "刀头调试",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=a30301opyil"
+        },
+        {
+          videoText: "材料展示",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=d3030dxr5y5"
+        },
+        {
+          videoText: "测试切割",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=y30306ie0he"
+        }
       ]
     };
   },
@@ -89,6 +137,41 @@ export default {
       float: left;
       margin-top: 0.15rem;
       display: block;
+    }
+  }
+}
+.teachingSetps {
+  background: #f2f2f2;
+  padding: 0.2rem 0;
+  text-align: center;
+  .teachingVideo {
+    a {
+      font-size: 0.2rem;
+      display: block;
+      color: #000;
+      text-decoration: none;
+      img {
+        margin-bottom: 0.1rem;
+        max-width: 95%;
+      }
+    }
+  }
+  .setps {
+    margin-top: 0.5rem;
+    h1 {
+      font-size: 0.5rem;
+    }
+    ul {
+      li {
+        width: 50%;
+        float: left;
+        font-size: 0.2rem;
+        margin-top: .3rem;
+        img {
+          max-width: 95%;
+          margin-top: 0.2rem;
+        }
+      }
     }
   }
 }
