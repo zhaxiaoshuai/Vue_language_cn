@@ -21,6 +21,9 @@ const Attractive_clients_flow = () => import('../components/Attractive_clients_f
 const Free_Admission = () => import('../components/Attractive_clients_flow/Free_Admission')
 const Downloads = () => import('../components/downloads/downloads')
 
+// 仅可见路由
+const AppVideo = () => import('../components/AppVideo/AppVideo')
+
 
 
 Vue.use(Router)
@@ -32,12 +35,18 @@ const router = new Router({
     {
       path: '/index',
       name: 'index',
-      component: index
+      component: index,
+      meta:{
+        isShowHeaderFooter:true
+      }
     },
     {
       path: '/advantage',
       name: 'advantage',
       component: advantage,
+      meta:{
+        isShowHeaderFooter:true
+      }
     },
     {
       path: '/features',
@@ -50,12 +59,18 @@ const router = new Router({
         {
           path: 'ordinary',
           name: 'features_ordinary',
-          component: features_Ordinary
+          component: features_Ordinary,
+          meta:{
+            isShowHeaderFooter:true
+          }
         },
         {
           path: 'wireless',
           name: 'features_wireless',
-          component: features_Wireless
+          component: features_Wireless,
+          meta:{
+            isShowHeaderFooter:true
+          }
         },
       ]
     },
@@ -63,6 +78,7 @@ const router = new Router({
       path: '/idskinvideo',
       name: 'idskinvideo',
       component: idskinvideo,
+
       redirect: {
         name: 'whole'
       },
@@ -70,17 +86,26 @@ const router = new Router({
         {
           path: 'whole',
           name: 'whole',
-          component: whole
+          component: whole,
+          meta:{
+            isShowHeaderFooter:true
+          }
         },
         {
           path: 'teaching',
           name: 'teaching',
-          component: teaching
+          component: teaching,
+          meta:{
+            isShowHeaderFooter:true
+          }
         },
         {
           path: 'productdisplay',
           name: 'productDisplay',
-          component: projectDisplay
+          component: projectDisplay,
+          meta:{
+            isShowHeaderFooter:true
+          }
         },
 
       ]
@@ -89,21 +114,39 @@ const router = new Router({
       path: '/agent',
       name: 'agent',
       component: agent,
+      meta:{
+        isShowHeaderFooter:true
+      }
     },
     {
       path: '/attractive_clients_flow',
       name: 'Attractive_clients_flow',
       component: Attractive_clients_flow,
+      meta:{
+        isShowHeaderFooter:true
+      }
     },
     {
       path: '/free_admission',
       name:'free_admission',
-      component: Free_Admission
+      component: Free_Admission,
+      meta:{
+        isShowHeaderFooter:true
+      }
+      
     },
     {
       path: '/downloads',
       name:'downloads',
-      component: Downloads
+      component: Downloads,
+      meta:{
+        isShowHeaderFooter:true
+      }
+    },
+    {
+      path:'/appvideo',
+      name:"AppVideo",
+      component:AppVideo
     },
 
 

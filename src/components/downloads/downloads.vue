@@ -29,15 +29,10 @@ export default {
     return {
       Appdownloads: [
         {
-          pText: "切膜小子IDskin蓝牙版",
-          spanText: "版本型号：V1.00 (18.0MB)",
-          aHref: "../../../static/app/cn/bt_IDskinCut_Zh.apk"
+          pText: "切膜小子IDskin",
+          spanText: "版本型号：V1.00 (12.0MB)",
+          aHref: "../../../static/app/cn/IDskin Cut_Zh_11-28-V6(1).apk"
         },
-        {
-          pText: "手机膜切割 数据线中文版",
-          spanText: "版本型号：V1.00 (18.0MB)",
-          aHref: "../../../static/app/cn/Fast_Skin_Zh.apk"
-        }
       ]
     };
   },

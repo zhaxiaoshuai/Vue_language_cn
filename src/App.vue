@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- 头部 -->
-    <Header />
+    <Header v-if="$route.meta.isShowHeaderFooter" />
     <!-- 显示主体内容 -->
     <keep-alive>
       <router-view></router-view>
