@@ -38,26 +38,16 @@
         <el-col class="setps">
           <h1>材料加点方式</h1>
           <ul class="clearfix">
-            <li>
-              步骤1：进入切膜小子App
-              <img src="./images/steps1.jpg" alt />
-            </li>
-            <li>
-              步骤1：进入个人中心
-              <img src="./images/steps2.jpg" alt />
-            </li>
-            <li>
-              步骤1：点击扫描材料数据
-              <img src="./images/steps3.jpg" alt />
-            </li>
-            <li>
-              步骤1：扫码
-              <img src="./images/steps4.jpg" alt />
+            <li v-for="(setpsContent, index) in setpsContents" :key="index">
+              步骤{{index++ +1}} ：{{setpsContent.setpsContentText}}
+              <img
+                :src="setpsContent.setpsContentImg"
+                alt
+              />
             </li>
           </ul>
           <h1>材料订购人员：电话/微信：13671313585</h1>
         </el-col>
-      
       </el-row>
     </div>
   </div>
@@ -69,6 +59,7 @@ export default {
   name: "downloads",
   data() {
     return {
+      setpsNumber:1,
       Appdownloads: [
         {
           pText: "切膜小子IDskin",
@@ -97,12 +88,31 @@ export default {
           videoText: "测试切割",
           videoHref: "https://v.qq.com/txp/iframe/player.html?vid=y30306ie0he"
         }
+      ],
+      setpsContents: [
+        {
+          setpsContentText: "进入切膜小子App",
+          setpsContentImg: require("./images/steps1.jpg")
+        },
+        {
+          setpsContentText: "进入个人中心",
+          setpsContentImg: require("./images/steps2.jpg")
+        },
+        {
+          setpsContentText: "点击扫描材料数据",
+          setpsContentImg: require("./images/steps3.jpg")
+        },
+        {
+          setpsContentText: "扫描材料二维码",
+          setpsContentImg: require("./images/steps4.jpg")
+        }
       ]
     };
   },
   components: {
     bannerStaticState
-  }
+  },
+
 };
 </script>
 
@@ -162,14 +172,14 @@ export default {
     margin-top: 0.5rem;
     h1 {
       font-size: 0.5rem;
-      margin-top: .3rem;
+      margin-top: 0.3rem;
     }
     ul {
       li {
         width: 50%;
         float: left;
         font-size: 0.2rem;
-        margin-top: .3rem;
+        margin-top: 0.3rem;
         img {
           max-width: 95%;
           margin-top: 0.2rem;
