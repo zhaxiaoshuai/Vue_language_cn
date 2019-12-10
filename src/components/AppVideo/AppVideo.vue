@@ -22,7 +22,7 @@
     </el-row>
     <el-row class="container">
         <el-col>
-            1
+            
         </el-col>
     </el-row>
   </div>
@@ -40,6 +40,13 @@ export default {
           spanText: "版本型号：V1.00 (12.0MB)",
           aHref: "../../../static/app/cn/IDskin Cut_Zh_11-28-V6(1).apk"
         }
+      ],
+      videos:[
+        {videoText:"开箱视频及设备介绍",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=z3030gamug9"},
+        {videoText:"软件安装及调试",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=e3030t4zysn"},
+        {videoText:"刀头调试",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=a30301opyil"},
+        {videoText:"材料展示",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=d3030dxr5y5"},
+        {videoText:"测试切割",videoHref:"https://v.qq.com/txp/iframe/player.html?vid=y30306ie0he"},
       ]
     };
   },
