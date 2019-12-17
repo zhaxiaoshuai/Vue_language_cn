@@ -134,7 +134,7 @@ export default {
       padding-right: 0.2rem;
     }
     p {
-      font-size: 0.25rem;
+      font-size: 0.2rem;
     }
     span {
       font-size: 0.2rem;
@@ -145,7 +145,7 @@ export default {
     }
     a {
       color: #26d9a8;
-      font-size: 0.2rem;
+      font-size: 0.4rem;
       float: left;
       margin-top: 0.15rem;
       display: block;
