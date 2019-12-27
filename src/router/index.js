@@ -24,6 +24,8 @@ const Downloads = () => import('../components/downloads/downloads')
 // 仅可见路由
 const AppVideo = () => import('../components/AppVideo/AppVideo')
 
+const disclaimer = () => import('../components/disclaimer/disclaimer.vue')
+
 
 
 Vue.use(Router)
@@ -147,6 +149,12 @@ const router = new Router({
       path: '/appvideo',
       name: "AppVideo",
       component: AppVideo
+    },
+    {
+      path: '/disclaimer',
+      name: "disclaimer",
+      component: disclaimer
+      
     },
 
 

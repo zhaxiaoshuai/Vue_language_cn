@@ -46,7 +46,7 @@
               />
             </li>
           </ul>
-          <h1>材料订购人员：电话/微信：13671313585</h1>
+          <h1>如遇问题请留言或联系经销商</h1>
         </el-col>
       </el-row>
     </div>
@@ -145,7 +145,7 @@ export default {
     }
     a {
       color: #26d9a8;
-      font-size: 0.4rem;
+      font-size: 0.6rem;
       float: left;
       margin-top: 0.15rem;
       display: block;
