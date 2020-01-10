@@ -31,7 +31,7 @@ export default {
         {
           pText: "切膜小子IDskin",
           spanText: "版本型号：V1.00 (12.0MB)",
-          aHref: "../../../static/app/cn/IDskin Cut_Zh_11-28-V6(1).apk"
+          aHref: "../../../static/app/cn/2019.12.25-IDskin_Cut_Release.apk"
         },
       ]
     };
