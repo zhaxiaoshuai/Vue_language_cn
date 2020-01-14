@@ -70,7 +70,7 @@ export default {
       videos: [
         {
           videoText: "开箱视频及设备介绍",
-          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=z3030gamug9"
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=s3051oohm8q"
         },
         {
           videoText: "软件安装及调试",
@@ -87,6 +87,14 @@ export default {
         {
           videoText: "测试切割",
           videoHref: "https://v.qq.com/txp/iframe/player.html?vid=y30306ie0he"
+        },
+        {
+          videoText: "切膜小子切割过程",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=d30511kuscc"
+        },
+        {
+          videoText: "切膜小子贴膜过程",
+          videoHref: "https://v.qq.com/txp/iframe/player.html?vid=t3051v3yb52"
         }
       ],
       setpsContents: [
